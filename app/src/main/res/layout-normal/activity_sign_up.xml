@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/ilusartion"
+                android:layout_below="@id/arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ilusaration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_below="@id/ilusartion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="35sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Isdiwaan Geli"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/fill"
+                android:layout_below="@id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/orange"
+                android:textStyle="italic|bold"
+                android:text="Fadlan buuxi fomamkan hoose"
+                android:layout_marginTop="5dp"/>
+
+
+            <EditText
+                android:id="@+id/edittext_fullname"
+                android:layout_width="340dp"
+                android:layout_below="@id/fill"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/person2"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:drawablePadding="20dp"
+                android:hint="geli magac isticmalkaga"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="340dp"
+                android:layout_below="@id/edittext_fullname"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/email2"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:drawablePadding="20dp"
+                android:hint="geli emailkaga"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/black"
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="340dp"
+                android:layout_below="@id/email"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/lock2"
+                android:paddingStart="10dp"
+                android:drawableEnd="@drawable/hidepwd"
+                android:paddingEnd="10dp"
+                android:inputType="textPassword"
+                android:drawablePadding="20dp"
+                android:hint="geli number sireedkaga"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/lock2"
+                android:paddingStart="10dp"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/hidepwd"
+                android:paddingEnd="10dp"
+                android:drawablePadding="20dp"
+                android:hint="geli markale number sireedkaga"
+                android:layout_below="@id/password"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="@color/orange"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_bg"
+                android:text="Isdiwaangeli"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_below="@id/confirm_password"
+                android:textAllCaps="false"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/register_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "horay isku diwaan geliyey?"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Geli Nuqul Hore"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/primary"/>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</layout>

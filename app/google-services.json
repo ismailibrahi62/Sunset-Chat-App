@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "728183119381",
+    "project_id": "sunset-chatting-application",
+    "storage_bucket": "sunset-chatting-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728183119381:android:afd30a7d31f284c9e7b81c",
+        "android_client_info": {
+          "package_name": "com.ismail.sunsetchattingapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUMPZHPeQmhyiTQEYPPq5-FHGi9Gde7n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

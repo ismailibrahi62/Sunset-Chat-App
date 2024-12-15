@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SunsetChattingApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+    </style>
+
+    <style name="Theme.SunsetChattingApplication" parent="Base.Theme.SunsetChattingApplication" />
+    <style name="action_bar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+    </style>
+    <style name="YourCustomUnderline">
+        <item name="colorControlNormal">@color/white</item> <!-- Default line color -->
+        <item name="colorControlActivated">@color/white</item> <!-- Color when the EditText is focused -->
+        <item name="colorControlHighlight">@color/white</item> <!-- Color for the underline on text input -->
+    </style>
+
+
+    <!-- Default (Light) Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <!-- Other theme attributes -->
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <!-- Other theme attributes -->
+    </style>
+
+
+</resources>

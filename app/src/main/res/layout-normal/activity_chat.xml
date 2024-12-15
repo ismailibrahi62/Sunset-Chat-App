@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+
+    <LinearLayout
+        android:id="@+id/topUserInfon"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_chat">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/arrow"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile4"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ismail"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/status"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Online"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#3ABF38"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginBottom="4dp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerMs"
+        android:layout_width="match_parent"
+        android:layout_above="@id/myRelative"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topUserInfon"/>
+
+
+    <RelativeLayout
+        android:id="@+id/myRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edittextSendMessage"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginStart="10dp"
+            android:hint="message"
+            android:paddingEnd="18dp"
+            android:layout_marginBottom="7dp"
+            android:paddingStart="10dp"
+            android:gravity="top|start"
+            android:paddingTop="10dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:drawableStart="@drawable/emoji"
+            android:drawableEnd="@drawable/galler"
+            android:drawablePadding="20dp"
+            android:background="@drawable/sendmessage"/>
+
+        <ImageView
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/send2"
+            android:layout_marginTop="2dp"
+             android:layout_marginEnd="13dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</layout>
